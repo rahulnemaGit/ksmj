@@ -1,0 +1,448 @@
+@CHARSET "ISO-8859-1";
+/* CSS for all page */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ 
+body {
+	   background-color: #9d1425;
+	
+	
+}
+
+/******************************** style for wrapper layout start*********************************/
+#wrapper{
+	margin:0px auto;
+	height: 1100px;
+	width:1200px;
+	border-radius:10px;	
+       
+	padding: 10px 5px 05px 5px;
+     
+}
+#wrapper h1 {
+    font-style:  italic;
+}
+
+/********************************* Header Layout start *******************************************/
+
+.header-layout{
+	width: auto;
+	height: 530px;
+	border-radius:10px;  
+        padding: 0px 10px 0px 10px;
+        background-color: #1c5fa4;
+}
+.top-menu-layout{
+    position: relative;
+    width: auto;
+    top: 10px;
+    height: 200px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow:5px 5px 15px;
+    
+}
+.top-menu-layout .logoimg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow:5px 5px 15px;
+}
+.top-menu-layout .sardar-patel{
+    position: absolute;
+    left: 830px;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px;
+}
+.site-title{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width:600px;
+    text-shadow: 9px 010px 5px rgba(102, 255, 0, 0.50);
+    color: #f94a5f;
+}
+.site-title h2{
+   text-align: center;
+   font-style: italic;
+   letter-spacing: 2px;
+}
+.center-image{
+    position: absolute;
+    left: 205px;
+    top: 50px;
+    bottom: 183px;
+    width: 620px;
+    height: 100px;
+}
+.conter-image , h4{
+   text-align: center;
+   font-style: italic;
+   letter-spacing: 2px;
+   text-shadow: 9px 010px 5px rgba(102, 255, 0, 0.50);
+   color: #94c0e9;
+}
+.center-image img{
+    width: 620px;
+    height: 150px;
+}
+.top-menu-layout ol{
+    list-style-type: none;
+    position: relative;   
+    height: 30px;
+    top: 0px;
+}
+.top-menu-layout ol li{
+    float: right;
+    height: 30px;
+    padding-right: 20px;
+ 
+}
+.top-menu-layout ol li a{
+    display: block;
+    color: #ffffff;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.header-menu-bar{   
+        z-index: 999;
+        position: relative;
+        top: 15px;
+	width: auto;
+	height: 40px;
+	padding:0px 10px 0px 10px;
+	border-radius: 10px;
+	box-shadow:5px 5px 10px;	
+	border: none;
+  
+}
+.header-menu-bar ol{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.header-menu-bar ol li{
+	float: left;
+}
+.header-menu-bar ol li a{
+   
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.header-menu-bar ol li:HOVER{
+	box-shadow:5px 5px 10px;
+	border-radius:5px;
+	background-color: #3f77a0;	
+}
+.mainAdmin{
+    position: relative;
+    width: 500px;
+    left: 350px;
+    height: 400px;
+    top: 100px;
+    border-radius: 10px;
+  
+}
+.mainAdmin h2{
+   text-align: center;
+   font-style: italic;
+   letter-spacing: 2px;
+   text-shadow: 9px 010px 5px rgba(102, 255, 0, 0.50);
+   color: #94c0e9;
+}
+.mainAdmin h3{
+    position: relative;
+    top: 20px;
+    left: 65px;
+    font-size:  medium;
+    font-family:sans-serif;
+}
+.mainAdminLogin{
+    position: relative;
+    top: 25px;
+    left: 0px;
+    width: 500px;
+    height: 350px;
+   
+}
+.loginFormAdminLogin {
+    position: relative;
+    border: 1px solid #f1f1f1;
+    top: 5px;
+}
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #1c5fa4;
+    box-sizing: border-box;
+}
+.buttonAdminLogin{
+    background-color: #3f77a0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.singUpAdminLogin{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+}
+.containerAdminLogin{
+    padding: 16px;
+}
+.pswAdminLogin{
+    float: right;
+    padding-top: 16px;
+}
+@media screen and (max-width:300px){
+    .pswAdminLogin{
+        display: block;
+        float: none;
+    }
+    .singUpAdminLogin{
+        width: 100%;
+    }
+}
+/*******************************************************************************/
+/**********************************sub menu *************************************/
+.header-menu-bar-sub{
+   
+    position: absolute;
+    top: 40px;
+    width: 120px;
+    display: none;
+    list-style-type: none;
+    
+}
+.header-menu-bar-sub li{
+    display: block;
+    width: 120px;;
+}
+
+/**********************************/
+.active {
+    border-radius:5px;
+    background-color: #3f77a0;
+}
+.background-image{
+        position: relative;
+        top: 20px;
+	width: auto;
+	height: 260px;
+	border-radius: 10px;
+	box-shadow:5px 5px 15px;        
+}
+div.img {
+    position: relative;
+    left: 05px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 220px;
+    border-radius: 5px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: 200px;
+}
+
+div.desc {
+    padding: 5px;
+    font-size: small;
+    font-style: oblique;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/***********************************************************************************************/
+/*********************************Middle Column Css Style ***********************************/
+
+.historyIndia , .historyMP , .historyDamoh h1 , .samajSevi h1{
+    position: relative;
+    left: 0px;
+    color: greenyellow; 
+}
+.pHistoryIndia{
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+    font-style: italic;
+    
+}
+.videoBox , .galleryBox , .contactBox , .historyIndia , .historyMP , .historyDamoh , .samajSevi {
+    position: relative;
+    border-radius: 10px;
+    width: auto;
+    top: 05px;
+    height: 365px;
+    box-shadow:5px 5px 15px;
+    border-radius: 5px;
+    background-color: #b0ccff;
+    overflow: scroll;
+}
+.galleryBox{
+    overflow-x: scroll;
+}
+.videoBox video{
+    width: 1200px;
+    height:350px;
+    border-radius: 10px;
+ 
+}
+.contactBox .contactName{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 180px;
+    height: 200px;
+  
+}
+
+.contactDetails {
+	margin:auto;
+	width:100%;
+	border: 0px solid navy;
+	border-collapse: collapse;
+	border-radius: 5px; 
+}
+
+.contactDetails th {
+    background-color: #4eaf53;	
+}
+.contactDetails th , td {
+	width:220px;
+	text-align: center;
+	font-size:16px;
+	padding: 4px;        
+}
+.contactDetails tr:HOVER {
+
+}
+.galleryBox h2, .contactBox h1{
+    position: relative;
+    left: 10px;
+    color: greenyellow;
+}
+.galleryBox-1{
+    position: relative;
+    border-radius: 5px;
+    top: 10px;
+    left: 40px;
+    width: 180px;
+    height: 150px;
+}
+.galleryBox-1Pos{
+    float: left;
+}
+.samajSevi p{
+    font-family: krutidev;
+    position: relative;
+    color: white;
+    top: 5px;
+    left: 42px;
+    text-align: justify;
+    font-size: larger;
+}
+/******************************************************************************************/
+
+
+/********************************************************************************************/
+/********************************Global css Style ***********************************************/
+
+/****************************** Header Layout end*************************************/
+
+/****************************** Navigation  start******************************/
+
+/***************sub menu ******************/
+
+/*******************************************/
+ 
+
+/****************************** Navigation end******************************/
+
+/****************************** Left  Column start******************************/
+/****************************** Left Column  end******************************/
+
+/****************************** right column start******************************/
+/*************** Common Layout for about,contact and faculty *********************/
+/********************************************************************************/
+
+/************************ common layout for about and contact *******************/
+/*********************************************************************************/
+
+/**********************************layout for faculty , courses ***************************/
+/****************************** right column end******************************/
+
+/****************************** footer  start******************************/
+.footer-layout{
+        position: relative;
+        top:10px;
+        width: auto;
+	height: 190px;
+	border-radius:10px;  
+        background-color: #1e3c72;
+        box-shadow:5px 5px 15px;
+}
+.footer-layout marquee{
+    color: white;
+}
+
+.footer-box {
+        position: relative;
+        top: 140px;
+	margin:auto;
+	width:100%;
+	border: 0px solid navy;
+	border-collapse: collapse;
+}
+
+.footer-box th {
+    background-color: #141E30;
+    color: white;	
+}
+.footer-box th , td {
+	width:220px;
+        text-align: center;
+	font-size:16px;
+	padding: 4px;
+}
+.footer-box tr td a{
+    text-decoration: none;
+    color: white;
+}
+.footer-box tr td{
+  color: white;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+	}
+.footer-box tr:nth-child(odd) {
+
+}
+/****************************** footer end******************************/
+ 
